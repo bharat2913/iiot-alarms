@@ -9,9 +9,9 @@ export default function Dashboard() {
     return(
         <div className='flex'>
            <Sidebar toggleMenu={toggleMenu}setToggleMenu={setToggleMenu} />
-           {/* <div className='w-full'> */}
+           <div className='w-full pr-12 '>
             <Header toggleMenu={toggleMenu}setToggleMenu={setToggleMenu} />
-           {/* </div> */}
+           </div>
         </div>
     )
 }

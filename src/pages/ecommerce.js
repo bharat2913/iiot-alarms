@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Sidebar from '../components/sidebar';
+import Header from '../components/header';
+import Dropdown from '../components/dropdown'
 
-export default function Ecommerce() {
-   
+export default function Dashboard() {
+    const [toggleMenu, setToggleMenu] = useState(false);
+    const options = ['test1', 'test2', 'test3']
     return(
-        <div>
-           This is Ecommerce page
+        <div className='flex'>
+           <Sidebar toggleMenu={toggleMenu}setToggleMenu={setToggleMenu} />
+           <div className='w-full pr-12 '>
+            <Header toggleMenu={toggleMenu}setToggleMenu={setToggleMenu} />
+            <div>This is Ecommerce Page</div>
+           </div>
         </div>
     )
 }
