@@ -11,7 +11,7 @@ export default function Dropdown(data) {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className=' border shadow  px-4 py-1 rounded-xl cursor-pointer overflow-x-hidden'>
+        <Menu.Button className=' border shadow transition-all px-4 py-1 rounded-xl cursor-pointer overflow-x-hidden'>
         <div className='flex items-center text-sm gap-3'>
                 <span className={`material-icons text-2xl`}>dashboard</span>
                 {data.name}
@@ -38,7 +38,7 @@ export default function Dropdown(data) {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="origin-top-right absolute z-50 mt-2 w-36 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="origin-top-right transition-all relative z-50 mt-2 w-36 overflow-x-hidden rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
             {data.options.map((option) => (
               <Menu.Item>

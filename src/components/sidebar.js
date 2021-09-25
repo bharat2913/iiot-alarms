@@ -7,8 +7,8 @@ export default function Sidebar({setToggleMenu, toggleMenu}) {
 
     const sideDatas = [
         {
-            link: ROUTES.PAGE,
-            name: 'Page',
+            link: ROUTES.VISUALIZATION,
+            name: 'Visualization',
             dropdown: false
         },
         {
@@ -17,11 +17,6 @@ export default function Sidebar({setToggleMenu, toggleMenu}) {
             dropdown: true,
             option: ['Gateway', 'Polling Method']
 
-        },
-        {
-            link: ROUTES.VISUALIZATION,
-            name: 'Visualization',
-            dropdown: false
         },
         {
             link: ROUTES.APPLICATION,
@@ -72,8 +67,6 @@ export default function Sidebar({setToggleMenu, toggleMenu}) {
             dropdown: false
         },
     ]
-
-    const options = ['test1', 'test2', 'test3']
 
     return(
         <div className={` ${toggleMenu ? 'w-1/5' : 'w-24'} transition-all overflow-x-hidden h-full border py-8  flex flex-col justify-center items-center`}>

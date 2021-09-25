@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIOT-ALARMS</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./iiot.css">
+</head>
+
+<body>
+    <div class="flex">
+        <div
+            id="sidbar"
+            class=" w-1/5 transition-all overflow-x-hidden h-full border py-8  flex flex-col justify-center items-center">
+            <div class="text-xl font-semibold">IIOT ALARMS</div>
+            <ul class="flex flex-col w-full px-4 gap-4 mt-4 select-none ">
+                <li class=" border bg-white shadow  px-4 py-1 rounded-xl cursor-pointer overflow-x-hidden"><a href="/">
+                        <div class="flex items-center font-semibold gap-3"><span
+                                class="material-icons text-3xl">dashboard</span>Dashboard</div>
+                    </a></li><span class="font-semibold text-gray-700 text-sm">Pages</span>
+                <li class=" border shadow  px-4 py-1 rounded-xl cursor-pointer overflow-x-hidden"><a href="/page">
+                        <div class="flex items-center text-sm gap-3"><span
+                                class="material-icons text-2xl ">dashboard</span>Page</div>
+                    </a></li>
+                <div class="relative overflow-x-hidden inline-block text-left">
+                    <div><button class=" border shadow  px-4 py-1 rounded-xl cursor-pointer overflow-x-hidden"
+                            id="headlessui-menu-button-1" type="button" aria-haspopup="true" aria-expanded="false">
+                            <div class="flex items-center text-sm gap-3"><span
+                                    class="material-icons text-2xl">dashboard</span>Device management<span
+                                    class="material-icons">expand_more</span></div>
+                        </button></div>
+                </div>
+                <li class=" border shadow  px-4 py-1 rounded-xl cursor-pointer overflow-x-hidden"><a
+                        href="/visualization">
+                        <div class="flex items-center text-sm gap-3"><span
+                                class="material-icons text-2xl ">dashboard</span>Visualization</div>
+                    </a></li>
+                <li class=" border shadow  px-4 py-1 rounded-xl cursor-pointer overflow-x-hidden"><a
+                        href="/application">
+                        <div class="flex items-center text-sm gap-3"><span
+                                class="material-icons text-2xl ">dashboard</span>Application</div>
+                    </a></li>
+                <li class=" border shadow  px-4 py-1 rounded-xl cursor-pointer overflow-x-hidden"><a
+                        href="/authentication">
+                        <div class="flex items-center text-sm gap-3"><span
+                                class="material-icons text-2xl ">dashboard</span>Authentication</div>
+                    </a></li>
+                <li class=" border shadow  px-4 py-1 rounded-xl cursor-pointer overflow-x-hidden"><a href="/ecommerce">
+                        <div class="flex items-center text-sm gap-3"><span
+                                class="material-icons text-2xl ">dashboard</span>Ecommerce</div>
+                    </a></li>
+                <div class="relative overflow-x-hidden inline-block text-left">
+                    <div><button class=" border shadow  px-4 py-1 rounded-xl cursor-pointer overflow-x-hidden"
+                            id="headlessui-menu-button-2" type="button" aria-haspopup="true" aria-expanded="false">
+                            <div class="flex items-center text-sm gap-3"><span
+                                    class="material-icons text-2xl">dashboard</span>Alert management<span
+                                    class="material-icons">expand_more</span></div>
+                        </button></div>
+                </div>
+                <div class="relative overflow-x-hidden inline-block text-left">
+                    <div><button class=" border shadow  px-4 py-1 rounded-xl cursor-pointer overflow-x-hidden"
+                            id="headlessui-menu-button-3" type="button" aria-haspopup="true" aria-expanded="false">
+                            <div class="flex items-center text-sm gap-3"><span
+                                    class="material-icons text-2xl">dashboard</span>Notification Management<span
+                                    class="material-icons">expand_more</span></div>
+                        </button></div>
+                </div>
+                <div class="relative overflow-x-hidden inline-block text-left">
+                    <div><button class=" border shadow  px-4 py-1 rounded-xl cursor-pointer overflow-x-hidden"
+                            id="headlessui-menu-button-4" type="button" aria-haspopup="true" aria-expanded="false">
+                            <div class="flex items-center text-sm gap-3"><span
+                                    class="material-icons text-2xl">dashboard</span>Report management<span
+                                    class="material-icons">expand_more</span></div>
+                        </button></div>
+                </div>
+                <li class=" border shadow  px-4 py-1 rounded-xl cursor-pointer overflow-x-hidden"><a href="/ecommerce">
+                        <div class="flex items-center text-sm gap-3"><span
+                                class="material-icons text-2xl ">dashboard</span>User management</div>
+                    </a></li>
+                <li class=" border shadow  px-4 py-1 rounded-xl cursor-pointer overflow-x-hidden"><a href="/ecommerce">
+                        <div class="flex items-center text-sm gap-3"><span
+                                class="material-icons text-2xl ">dashboard</span>Liscense information</div>
+                    </a></li>
+                <li class=" border shadow  px-4 py-1 rounded-xl cursor-pointer overflow-x-hidden"><a href="/ecommerce">
+                        <div class="flex items-center text-sm gap-3"><span
+                                class="material-icons text-2xl ">dashboard</span>Help</div>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="flex w-full justify-between items-center m-8 h-12 select-none">
+            <div id="menu" ><span class="material-icons cursor-pointer">menu</span></div>
+            <div class="flex items-center gap-2">
+                <div class="shadow border rounded-xl flex">
+                  <span class="bg-white rounded-l-xl w-auto flex justify-end items-center text-gray-500 p-2 cursor-pointer">
+                    <i class="material-icons text-xl">search</i>
+                  </span>
+                    <input
+                        class=" w-48 bg-white border-none rounded-md outline-none rounded-r-xl p-2" type="text"
+                        placeholder="Search" 
+                    />
+                </div>
+            <div class="flex text-sm justify-center items-center cursor-pointer"><span
+                        class=" material-icons  text-xl px-2">account_circle</span>Logout</div><span
+                    class="material-icons text-xl cursor-pointer">settings</span><span
+                    class="material-icons text-xl cursor-pointer">notifications</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./iiot.js"></script>
+</body>
+
+</html>
