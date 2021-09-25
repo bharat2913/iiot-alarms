@@ -1,0 +1,5 @@
+
+  .group:hover .group-hover\:scale-100 { 
+    transform: scale(1);
+    display: block;
+  }

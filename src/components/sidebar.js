@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import * as ROUTES from '../constants/routes';
 import Dropdown from './dropdown'
+import '../css/sidebar.css'
 
-export default function Sidebar({setToggleMenu, toggleMenu}) {
+export default function Sidebar({toggleMenu}) {
 
     const sideDatas = [
         {
@@ -73,7 +74,7 @@ export default function Sidebar({setToggleMenu, toggleMenu}) {
             <div className='text-xl font-semibold'>
                 IIOT ALARMS
             </div>
-            {/* <Dropdown name='Test' options={options} /> */}
+        
         <ul className='flex flex-col w-full px-4 gap-4 mt-4 select-none '>
             <li className=' border bg-white shadow  px-4 py-1 rounded-xl cursor-pointer overflow-x-hidden'>
             <Link to={ROUTES.DASHBOARD}>
@@ -83,9 +84,8 @@ export default function Sidebar({setToggleMenu, toggleMenu}) {
                 </div>
             </Link>
             </li>
-            <span className='font-semibold text-gray-700 text-sm'>
-            Pages
-            </span>
+            <span className='font-semibold text-gray-700 text-sm'>Pages</span>
+
             {sideDatas.map((sideData) => (
                !sideData.dropdown ? (
                 <li className=' border shadow  px-4 py-1 rounded-xl cursor-pointer overflow-x-hidden'>
@@ -96,10 +96,9 @@ export default function Sidebar({setToggleMenu, toggleMenu}) {
                 </div>
                 </Link>
             </li>
-               ) : (
-                <Dropdown name={sideData.name} options={sideData.option} />
-               )
-            
+               ) : ( 
+                <Dropdown name={sideData.name} link={sideData.link} options={sideData.option} toggleMenu={toggleMenu} />
+               )            
             ))}
             
         </ul>
